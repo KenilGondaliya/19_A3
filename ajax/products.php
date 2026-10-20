@@ -12,11 +12,6 @@ if ($page < 1) {
 $limit = 4;
 $offset = ($page - 1) * $limit;
 
-
-/* ==========================================
-   COUNT PRODUCTS
-========================================== */
-
 $count_stmt = $conn->prepare(
     "SELECT COUNT(*) AS total
      FROM products
@@ -32,12 +27,6 @@ $count_data = $count_result->fetch_assoc();
 $total_products = $count_data["total"];
 
 $total_pages = ceil($total_products / $limit);
-
-
-/* ==========================================
-   GET PRODUCTS
-========================================== */
-
 $stmt = $conn->prepare(
     "SELECT
         products.id,
@@ -130,11 +119,6 @@ if ($result->num_rows == 0) {
     <?php endwhile; ?>
 
 </div>
-
-
-<!-- ==========================================
-     PAGINATION
-========================================== -->
 
 <?php if ($total_pages > 1): ?>
 
