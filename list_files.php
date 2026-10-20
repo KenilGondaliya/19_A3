@@ -38,7 +38,5 @@ foreach ($files as $file) {
         echo "</li>";
     }
 }
-
 echo "</ul>";
-
 ?>
