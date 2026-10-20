@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+
+    <student>
+
+        <roll_no>101</roll_no>
+
+        <name>Rahul</name>
+
+        <email>rahul@gmail.com</email>
+
+        <course>BCA</course>
+
+        <age>21</age>
+
+    </student>
+
+    <student>
+
+        <roll_no>102</roll_no>
+
+        <name>Priya</name>
+
+        <email>priya@gmail.com</email>
+
+        <course>MSc ICT</course>
+
+        <age>22</age>
+
+    </student>
+
+    <student>
+
+        <roll_no>103</roll_no>
+
+        <name>Amit</name>
+
+        <email>amit@gmail.com</email>
+
+        <course>BCA</course>
+
+        <age>20</age>
+
+    </student>
+
+</students>
