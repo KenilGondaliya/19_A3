@@ -1,8 +1,5 @@
 <?php
-
 require "config/db.php";
-
-
 $result =
     $conn->query(
         "SELECT
@@ -13,15 +10,11 @@ $result =
             age
          FROM students"
     );
-
-
 $xml =
     new SimpleXMLElement(
         '<?xml version="1.0" encoding="UTF-8"?>
         <students/>'
     );
-
-
 while (
     $student =
     $result->fetch_assoc()
@@ -58,18 +51,10 @@ while (
 
 }
 
-
 $file =
     "xml/students_export.xml";
-
-
 $xml->asXML($file);
-
-
 echo "MySQL data exported successfully.";
-
 echo "<br>";
-
 echo "<a href='$file'>Open XML File</a>";
-
 ?>

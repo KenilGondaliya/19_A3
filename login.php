@@ -1,17 +1,7 @@
-
 <?php
-
 session_start();
-
 require "config/db.php";
-
 $message = "";
-
-
-/* ==========================================
-   LOGIN
-========================================== */
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = trim($_POST["email"] ?? "");
@@ -76,7 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-
 ?>
 
 <div class="container">
@@ -125,17 +114,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </button>
 
     </form>
-
-
     <p>
         Don't have an account?
-
         <a href="register.php">
             Register
         </a>
     </p>
-
 </div>
-
 <?php
 ?>
